@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body role="document" data-spy="scroll" data-target="#sampleScrollSpy" data-offset="72" id="top">
+	<div id="sampleScrollSpy">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sampleNavbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand linkInThePage" href="#top">
+						タイトル
+					</a>
+				</div>
+			
+				<div class="collapse navbar-collapse" id="sampleNavbar">
+					<ul class="nav navbar-nav">
+						<li><a class="linkInThePage" href="#sampleA">ページ内リンクＡ</a></li>
+						<li><a class="linkInThePage" href="#sampleB">ページ内リンクＢ</a></li>
+						<li><a class="linkInThePage" href="#sampleC">ページ内リンクＣ</a></li>
+					</ul>
+					<p class="navbar-text navbar-right">これはサンプル。</p>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>サンプル</h1>
+			<p><a href="../javascript/scrollspy-navbar.html" target="_blank">スクロールスパイを使うページ内リンクのトップ固定ナビゲーション・バー</a>のサンプル。</p>
+		</div>
+	</div>
+	<div class="container">
+		<h2 id="sampleA">Ａ</h2>
+		<ol>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ol>
+		<h2 id="sampleB">Ｂ</h2>
+		<ol>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ol>
+		<h2 id="sampleC">Ｃ</h2>
+		<ol>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ol>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="http://foo.tld/jquery/animatescroll.js-master/animatescroll.noeasing.js"></script>
+	<script>
+		$( function() {
+			$('.linkInThePage').click( function () {
+				var hrefValue = jQuery(this).attr( 'href' );
+				$(hrefValue).animatescroll({padding:70});
+			} );
+		} );
+	</script>
+</body>
+
+<!-- アフィックス -->
+<div data-spy="affix" data-offset-top="px単位の数値">
+	・・・
+</div>
+
+
+<!-- モーダル -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sampleModal">
+	モーダル・ダイアログ 呼び出し
+</button>
+
+<!-- モーダル・ダイアログ -->
+<div class="modal fade" id="sampleModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<h4 class="modal-title">タイトル</h4>
+			</div>
+			<div class="modal-body">
+				本文
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+				<button type="button" class="btn btn-primary">ボタン</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+  </body>
+</html>
