@@ -11,6 +11,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<Style type="text/css">
+  	.hportfolio{height:100%;}
+  	
+  	</style>
+  
   </head>
   <body role="document" data-spy="scroll" data-target="#sampleScrollSpy" data-offset="72" id="top">
 	<div id="sampleScrollSpy">
@@ -24,17 +29,16 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand linkInThePage" href="#top">
-						タイトル
+						正井　貴　ポートフォリオページ
 					</a>
 				</div>
 			
 				<div class="collapse navbar-collapse" id="sampleNavbar">
 					<ul class="nav navbar-nav">
-						<li><a class="linkInThePage" href="#sampleA">ページ内リンクＡ</a></li>
-						<li><a class="linkInThePage" href="#sampleB">ページ内リンクＢ</a></li>
-						<li><a class="linkInThePage" href="#sampleC">ページ内リンクＣ</a></li>
+						<li><a class="linkInThePage" href="#sampleA">自己紹介</a></li>
+						<li><a class="linkInThePage" href="#sampleB">ポートフォリオ</a></li>
+						<li><a class="linkInThePage" href="#sampleC">お客様コメント</a></li>
 					</ul>
-					<p class="navbar-text navbar-right">これはサンプル。</p>
 				</div>
 			</div>
 		</nav>
@@ -42,74 +46,179 @@
 
 	<div class="jumbotron">
 		<div class="container">
-			<h1>サンプル</h1>
-			<p><a href="../javascript/scrollspy-navbar.html" target="_blank">スクロールスパイを使うページ内リンクのトップ固定ナビゲーション・バー</a>のサンプル。</p>
+			<div class="row">
+				<img src="profile photo.png" class="img-circle col-md-4">
+				<div class="col-md-8">
+					<h2>正井　貴</h2>
+					<p>今のところ、HTML, CSS, Javascriptの初歩, Bootstrapについて勉強しました</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="container">
-		<h2 id="sampleA">Ａ</h2>
+		<h2 id="sampleA">自己紹介</h2>
 		<ol>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li>横浜在住</li>
+			<li>兵庫県出身</li>
+			<li>A型</li>
+			<li>趣味：お酒・グルメ</li>
 		</ol>
-		<h2 id="sampleB">Ｂ</h2>
-		<ol>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-		</ol>
-		<h2 id="sampleC">Ｃ</h2>
-		<ol>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-		</ol>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script src="http://foo.tld/jquery/animatescroll.js-master/animatescroll.noeasing.js"></script>
-	<script>
-		$( function() {
-			$('.linkInThePage').click( function () {
-				var hrefValue = jQuery(this).attr( 'href' );
-				$(hrefValue).animatescroll({padding:70});
-			} );
-		} );
-	</script>
-</body>
-
-<!-- アフィックス -->
-<div data-spy="affix" data-offset-top="px単位の数値">
-	・・・
-</div>
-
-
-<!-- モーダル -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sampleModal">
-	モーダル・ダイアログ 呼び出し
-</button>
-
-<!-- モーダル・ダイアログ -->
-<div class="modal fade" id="sampleModal" tabindex="-1">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-				<h4 class="modal-title">タイトル</h4>
+		<h2 id="sampleB">ポートフォリオ</h2>
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail hportfolio">
+						<a href="http://www.honda.co.jp/"><img src="messageboard.jpeg"></a>
+						<div class="caption">
+							<h4>メッセージボード</h4>
+							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample1">
+								詳細
+							</a>
+							<div class="collapse" id="collapseExample1">
+								<div class="well">
+									メッセージボードアプリです。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail hportfolio">
+						<a href="http://www.honda.co.jp/"><img src="twitter.png"></a>
+						<div class="caption">
+							<h4>Twitterクローン</h4>
+							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample2">
+								詳細
+							</a>
+							<div class="collapse" id="collapseExample2">
+								<div class="well">
+									Twitterクローンです。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail hportfolio">
+						<a href="http://www.honda.co.jp/"><img src="monolist.jpeg"></a>
+						<div class="caption">
+							<h4>モノリスト</h4>
+							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample3">
+								詳細
+							</a>
+							<div class="collapse" id="collapseExample3">
+								<div class="well">
+									モノリストです。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail hportfolio">
+						<a href="http://www.honda.co.jp/"><img src="potluck.jpeg"></a>
+						<div class="caption">
+							<h4>Potluck</h4>
+							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample4">
+								詳細
+							</a>
+							<div class="collapse" id="collapseExample4">
+								<div class="well">
+									オリジナルサービスです。乞うご期待ください。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="modal-body">
-				本文
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-				<button type="button" class="btn btn-primary">ボタン</button>
-			</div>
+		<h2 id="sampleC">お客様の声</h2>
+		<div class="row">
+				<div class="col-xs-6 col-md-4">
+					<div class="thumbnail hportfolio">
+						<img src="golgo.jpeg">
+							<h4>G様</h4>
+							<p>"彼はやる男だよ"</p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="thumbnail hportfolio">
+						<img src="mickey.jpeg">
+							<h4>M様</h4>
+							<p>"彼はやるね"</p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="thumbnail hportfolio">
+						<img src="jakow.jpeg">
+							<h4>J様</h4>
+							<p>"暗い〜、もっと光を〜"</p>
+					</div>
+				</div>
+		</div>
+
+	<!-- アフィックス -->
+	<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+		<!-- モーダル -->
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sampleModal">
+			お問い合わせ
+		</button>
+		<!-- モーダル・ダイアログ -->
+		<div class="modal fade" id="sampleModal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+						<h4 class="modal-title">お問い合わせ</h4>
+					</div>
+					<form class="form-horizontal">
+			            <div class="form-group">
+			              <label for="inputCompany" class="col-md-2 control-label">会社名</label>
+			              <div class="col-md-10">
+			                <input type="text" class="form-control" id="inputCompany" placeholder="例）サンプル株式会社">
+			              </div>
+			            </div>
+			              <div class="form-group">
+			              <label for="inputName" class="col-md-2 control-label">氏名</label>
+			              <div class="col-md-10">
+			                <input type="text" class="form-control" id="inputName" placeholder="例）煌木 太郎">
+			              </div>
+			            </div>
+			            <div class="form-group">
+			              <label for="inputEmail" class="col-md-2 control-label">メールアドレス</label>
+			              <div class="col-md-10">
+			                <input type="email" class="form-control" id="inputEmail" placeholder="例）taro.kirameki@example.com">
+			              </div>
+			            </div>
+			            <div class="form-group">
+			              <label for="inputTel" class="col-md-2 control-label">電話番号</label>
+			              <div class="col-md-10">
+			                <input type="tel" class="form-control" id="inputTel" placeholder="例）0312345678">
+			              </div>
+			            </div>
+			            <div class="form-group">
+			              <label for="inputContent" class="col-md-2 control-label">お問い合わせ内容</label>
+			              <div class="col-md-10">
+			                <textarea class="form-control" id="inputContent" rows="4" placeholder="お問い合わせ内容"></textarea>
+			              </div>
+			            </div>
+			            <div class="form-group">
+			              <div class="col-md-offset-2 col-md-10">
+			                <div class="checkbox">
+			                  <label>
+			                    <input type="checkbox">プライバシーポリシーに同意
+			                  </label>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="form-group">
+			              <div class="col-sm-offset-2 col-sm-10">
+			                <button type="submit" class="btn btn-default btn-success btn-block">お問い合わせを送信</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>	
 		</div>
 	</div>
-</div>
-
 
   </body>
 </html>
