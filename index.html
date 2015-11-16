@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio page</title>
+    <meta name="keywords" content="Potluck,Message board,Twitter clone,モノリスト">
+　　<meta name="description" content="正井　貴　ポートフォリオ">
+    <title>正井貴ポートフォリオ</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -12,17 +14,32 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   	<Style type="text/css">
-  	.hposition1{padding:0;margin:20%}
-  	.hposition2{padding:0;margin:20%}
+ 	*{font-family:meiryo;}
+ 	.jumbotron{
+	  background-image: url("header.jpg");
+	  background-position: center center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	}
+	.name{
+	  letter-spacing: 0.15em;
+	  color: #fff;
+	  text-shadow: 3px 3px 0px #000;
+	}
   	.hportfolio{height:100%;}
-  	jumbotron{padding:o;}
   	.affix{
 	  position:fixed;
 	  top:80px;
 	  right:10px;
 	}
 	.image{
-		height:100px;
+		height:200px;
+	}
+	@media screen and (max-width: 767px){
+		  	.hposition1{padding:0;margin-top:20px}
+	}
+	@media screen and (min-width: 991px){
+		  	.hposition2{padding:0;margin-top:20%}
 	}
   	</style>
   
@@ -56,29 +73,35 @@
 	</div>
 
 	<div class="jumbotron">
-		<div class="container">
-			<div class="row">
-				<img src="profile photo.png" class="img-circle col-md-4">
-				<div class="col-md-8">
-					<h2 class="hposition2">正井　貴</h2>
-					<p>今のところ、HTML, CSS, Javascriptの初歩, Bootstrapについて勉強しました</p>
+			<div class="container">
+				<div class="row">
+					<div class="hposition1">
+						<img src="profile photo.png" class="img-circle col-md-4">
+					</div>
+					<div class="col-md-8">
+						<h2 class="hposition2 name">正井　貴</h2>
+						<p class="name">今のところ、HTML, CSS, Javascriptの初歩, Bootstrapについて勉強しました</p>
+					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 	<div class="container">
 		<h2 id="sampleA">自己紹介</h2>
-		<ol>
-			<li>横浜在住</li>
-			<li>兵庫県出身</li>
-			<li>A型</li>
-			<li>趣味：お酒・グルメ</li>
-		</ol>
+		<ul>
+			<li><h3>横浜在住</h3></li>
+			<li><h3>兵庫県出身</h3></li>
+			<li><h3>A型</h3></li>
+			<li><h3>趣味：お酒・グルメ</h3></li>
+		</ul>
+		<br />
+		<br />
 		<h2 id="sampleB">ポートフォリオ</h2>
 			<div class="row">
 				<div class="col-xs-6 col-md-3">
 					<div class="thumbnail hportfolio">
-						<a href="http://www.honda.co.jp/"><img src="messageboard.jpeg" class="image"></a>
+						<div class="image">
+						  <a href="http://www.honda.co.jp/"><img src="messageboard.jpeg"></a>
+						</div>
 						<div class="caption">
 							<h4>メッセージボード</h4>
 							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample1">
@@ -94,7 +117,9 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="thumbnail hportfolio">
-						<a href="http://www.honda.co.jp/"><img src="twitter.png" class="image"></a>
+						<div class="image">
+							<a href="http://www.honda.co.jp/"><img src="twitter.png"></a>
+						</div>
 						<div class="caption">
 							<h4>Twitterクローン</h4>
 							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample2">
@@ -110,7 +135,9 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="thumbnail hportfolio">
-						<a href="http://www.honda.co.jp/"><img src="monolist.jpeg" class="image"></a>
+						<div class="image">
+							<a href="http://www.honda.co.jp/"><img src="monolist.jpeg"></a>
+						</div>
 						<div class="caption">
 							<h4>モノリスト</h4>
 							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample3">
@@ -126,7 +153,9 @@
 				</div>
 				<div class="col-xs-6 col-md-3">
 					<div class="thumbnail hportfolio">
-						<a href="http://www.honda.co.jp/"><img src="potluck.jpeg" class="image"></a>
+						<div class="image">
+							<a href="http://www.honda.co.jp/"><img src="potluck.jpeg"></a>
+						</div>
 						<div class="caption">
 							<h4>Potluck</h4>
 							<a class="btn btn-default" data-toggle="collapse" href="#collapseExample4">
@@ -141,27 +170,44 @@
 					</div>
 				</div>
 			</div>
+		<br />
+		<br />
 		<h2 id="sampleC">お客様の声</h2>
 		<div class="row">
 				<div class="col-xs-6 col-md-4">
 					<div class="thumbnail hportfolio">
-						<img src="golgo.jpeg">
+						<div class="image">
+							<a href=""><img src="golgo.jpeg"></a>
+						</div>
+						<br />
+						<div class="caption">
 							<h4>G様</h4>
 							<p>"彼はやる男だよ"</p>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-4">
 					<div class="thumbnail hportfolio">
-						<img src="mickey.jpeg">
+						<div class="image">
+							<a href=""><img src="mickey.jpeg"></a>
+						</div>
+						<br />
+						<div class="caption">
 							<h4>M様</h4>
 							<p>"彼はやるね"</p>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-4">
 					<div class="thumbnail hportfolio">
-						<img src="jakow.jpeg">
+						<div class="image">
+							<a href=""><img src="jakow.jpeg"></a>
+						</div>
+						<br />
+						<div class="caption">
 							<h4>J様</h4>
 							<p>"暗い〜、もっと光を〜"</p>
+						</div>
 					</div>
 				</div>
 		</div>
